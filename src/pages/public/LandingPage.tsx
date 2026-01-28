@@ -94,12 +94,7 @@ export default function LandingPage() {
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="text-white">
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 animate-fadeIn">
-                <Sparkles className="h-4 w-4 text-green-400" />
-                <span className="text-sm font-medium">Mejor precio garantizado</span>
-              </div>
-
+            <div className="text-white order-2 lg:order-1">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-slideUp text-white">
                 Alquila tu
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-300">vehículo ideal</span>
@@ -132,7 +127,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div id="reservar" className="animate-slideUp delay-200 lg:pl-8 scroll-mt-24">
+            <div id="reservar" className="animate-slideUp delay-200 lg:pl-8 scroll-mt-24 order-1 lg:order-2">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
                 <div className="flex items-center gap-2 px-4 py-2 bg-primary/5 border-b border-gray-100">
                   <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
@@ -286,7 +281,7 @@ export default function LandingPage() {
                 {city}
               </Link>
             ))}
-            <Link to="/ubicaciones" className="px-4 py-2 bg-primary text-white rounded-full shadow-sm hover:bg-primary/90 transition-all font-medium">
+            <Link to="/ubicaciones" className="px-4 py-2 bg-[#00CC66] text-white rounded-full shadow-sm hover:bg-[#00A352] transition-all font-medium">
               Ver todas →
             </Link>
           </div>

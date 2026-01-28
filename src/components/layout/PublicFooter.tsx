@@ -49,25 +49,25 @@ export function PublicFooter() {
               <img
                 src="/images/Alkilator_logo.png"
                 alt="Alkilator"
-                className="h-12 sm:h-14 w-auto object-contain"
+                className="h-12 sm:h-14 w-auto object-contain brightness-0 invert"
               />
             </Link>
-            <p className="text-white/70 text-sm mb-6 max-w-xs">
+            <p className="text-white text-sm mb-6 max-w-xs">
               Tu partner de confianza para el alquiler de coches y furgonetas. 
               Los mejores precios garantizados y sin costes ocultos.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-2 text-sm">
-              <a href="tel:+34900123456" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors">
+              <a href="tel:+34900123456" className="flex items-center gap-2 text-white hover:text-white/90 transition-colors">
                 <Phone className="h-4 w-4" />
                 +34 900 123 456
               </a>
-              <a href="mailto:info@alkilator.com" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors">
+              <a href="mailto:info@alkilator.com" className="flex items-center gap-2 text-white hover:text-white/90 transition-colors">
                 <Mail className="h-4 w-4" />
                 info@alkilator.com
               </a>
-              <p className="flex items-center gap-2 text-white/80">
+              <p className="flex items-center gap-2 text-white">
                 <MapPin className="h-4 w-4" />
                 Madrid, España
               </p>
@@ -81,7 +81,7 @@ export function PublicFooter() {
                   <a
                     key={social.name}
                     href={social.href}
-                    className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent/80 transition-colors"
+                    className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
                     aria-label={social.name}
                   >
                     <Icon className="h-5 w-5" />
@@ -93,13 +93,13 @@ export function PublicFooter() {
           
           {/* Alquiler Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Alquiler</h3>
+            <h3 className="font-semibold text-lg mb-4 text-white">Alquiler</h3>
             <ul className="space-y-2">
               {footerLinks.alquiler.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-white/80 hover:text-accent text-sm transition-colors"
+                    className="text-white hover:text-white/90 text-sm transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -110,13 +110,13 @@ export function PublicFooter() {
           
           {/* Información Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Información</h3>
+            <h3 className="font-semibold text-lg mb-4 text-white">Información</h3>
             <ul className="space-y-2">
               {footerLinks.informacion.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-white/80 hover:text-accent text-sm transition-colors"
+                    className="text-white hover:text-white/90 text-sm transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -127,13 +127,13 @@ export function PublicFooter() {
           
           {/* Legal Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Legal</h3>
+            <h3 className="font-semibold text-lg mb-4 text-white">Legal</h3>
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-white/80 hover:text-accent text-sm transition-colors"
+                    className="text-white hover:text-white/90 text-sm transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -148,13 +148,13 @@ export function PublicFooter() {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/50 text-sm">
+            <p className="text-white text-sm">
               © {new Date().getFullYear()} Alkilator. Todos los derechos reservados.
             </p>
             
             {/* Payment Methods */}
             <div className="flex items-center gap-3">
-              <span className="text-white/50 text-xs">Métodos de pago:</span>
+              <span className="text-white text-xs">Métodos de pago:</span>
               <div className="flex items-center gap-2">
                 {/* Iconos de métodos de pago - usando emojis por simplicidad */}
                 <div className="h-8 w-12 bg-white/10 rounded flex items-center justify-center text-xs">
