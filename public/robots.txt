@@ -1,0 +1,13 @@
+# Robots.txt para Alkilator
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /reserva/
+Disallow: /login
+Disallow: /registro
+Disallow: /*.json$
+
+# Sitemap (cambiar dominio en producción)
+Sitemap: https://alkilator.com/sitemap.xml

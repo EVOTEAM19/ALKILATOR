@@ -1,0 +1,39 @@
+import type { LucideIcon } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+
+interface EmptyStateProps {
+  icon: LucideIcon;
+  title: string;
+  description?: string;
+  action?: {
+    label: string;
+    onClick: () => void;
+  };
+  className?: string;
+}
+
+export function EmptyState({
+  icon: Icon,
+  title,
+  description,
+  action,
+  className,
+}: EmptyStateProps) {
+  return (
+    <div className={cn('text-center py-12', className)}>
+      <div className="mx-auto w-16 h-16 rounded-full bg-muted flex items-center justify-center mb-4">
+        <Icon className="h-8 w-8 text-muted-foreground" />
+      </div>
+      <h3 className="text-lg font-medium mb-2">{title}</h3>
+      {description && (
+        <p className="text-muted-foreground max-w-sm mx-auto mb-4">{description}</p>
+      )}
+      {action && (
+        <Button onClick={action.onClick}>{action.label}</Button>
+      )}
+    </div>
+  );
+}
+
+export default EmptyState;
