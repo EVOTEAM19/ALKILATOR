@@ -370,7 +370,7 @@ export default function VehiclesPage() {
     }
   };
   
-  const occupancyRate = stats ? Math.round((stats.rented / stats.total) * 100) || 0;
+  const occupancyRate = stats ? (Math.round((stats.rented / stats.total) * 100) || 0) : 0;
   
   return (
     <div className="space-y-6">
